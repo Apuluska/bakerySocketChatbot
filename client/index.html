@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <base href="/">
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>
+            Welcome to BakeryChatbot!
+        </h1>
+        <div id="messages"></div>
+        <form onsubmit="return addMessage(this);">
+            <div>
+            <input id="nickname" type="text" placeholder="Nick" />
+            <textarea id="text" placeholder="Type your message"></textarea>
+            </div>
+            <input id="button" type="submit" value="Send"/>
+            
+        </form>
+        
+        <br>
+
+    </div>
+</body>
+
+</html>
